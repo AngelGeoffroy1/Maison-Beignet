@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Beignet | Le beignet comme à la maison</title>
+  <link rel="icon" type="image/png" href="assets/Image beignet Acceuil.png">
+  <link rel="apple-touch-icon" href="assets/Image beignet Acceuil.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="accueil">
+    <nav class="nav">
+      <a class="nav__logo" href="#accueil" aria-label="Maison Beignet">
+        <img src="assets/Logo Texte.png" alt="Maison Beignet logo">
+      </a>
+      <button class="nav__burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav__links">
+        <a href="#contact">Contact</a>
+        <a href="#produits">Produits</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact" class="nav__icon" aria-label="Maison Beignet icon">
+          <img src="assets/Logo Maison.png" alt="">
+        </a>
+      </div>
+    </nav>
+
+    <div class="hero__content">
+      <div class="hero__text">
+        <p class="hero__tagline">Le beignet</p>
+        <h1>Comme à la maison</h1>
+        <p class="hero__description">
+          Une texture moelleuse, un goût généreux et le sourire qui va avec. Découvrez nos beignets artisanaux prêts à croquer sur la plage.
+        </p>
+        <a class="btn btn--primary" href="#produits">Nos beignets</a>
+      </div>
+      <div class="hero__beignet">
+        <img src="assets/Image beignet Acceuil.png" alt="Beignet Maison Beignet">
+      </div>
+    </div>
+    <div class="hero__wave" role="presentation"></div>
+  </header>
+
+  <main>
+    <section id="produits" class="section products">
+      <div class="products__title-block">
+        <h2>Deux goûts,<br>deux classiques</h2>
+      </div>
+
+      <div class="products__feature">
+        <div class="products__item products__item--pomme">
+          <img src="assets/beignet pomme.png" alt="Beignet pomme Maison Beignet">
+          <div class="products__item-info">
+            <h3 class="products__flavor products__flavor--pomme">Pomme</h3>
+            <p>Traditionnel beignet pomme avec ses morceaux — 125g</p>
+          </div>
+        </div>
+
+        <div class="products__item products__item--chocolat">
+          <img src="assets/beignet chocolat.png" alt="Beignet chocolat Maison Beignet">
+          <div class="products__item-info">
+            <h3 class="products__flavor products__flavor--chocolat">Chocolat</h3>
+            <p>Un mélange de saveurs entre noisette et cacao — 125g</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ou-nous-trouver" class="section locations">
+      <div class="section__intro">
+        <span class="section__eyebrow">Sur la côte</span>
+        <h2>Où nous trouver</h2>
+        <p>Retrouvez Maison Beignet sur nos triporteurs gourmands tout l'été. Trois spots incontournables de la côte Atlantique.</p>
+      </div>
+
+      <div class="locations__grid">
+        <article class="location-card">
+          <div class="location-card__image location-card__image--nauzan" role="presentation"></div>
+          <h3>Nauzan</h3>
+          <p>La promenade idéale pour savourer nos beignets tout en regardant le soleil se coucher.</p>
+        </article>
+        <article class="location-card">
+          <div class="location-card__image location-card__image--bois" role="presentation"></div>
+          <h3>Bois-Plage</h3>
+          <p>Notre triporteur vous attend à l'entrée principale, juste à côté de la piste cyclable.</p>
+        </article>
+        <article class="location-card">
+          <div class="location-card__image location-card__image--saint-palais" role="presentation"></div>
+          <h3>Saint-Palais</h3>
+          <p>Un détour par la conche et une poche de beignets tout frais avant de replonger dans l'océan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="apropos" class="section about">
+      <div class="about__content">
+        <div class="about__text">
+          <span class="section__eyebrow">Notre histoire</span>
+          <h2>À propos</h2>
+          <p>
+            Maison Beignet est une entreprise familiale née en 2023 sur la côte Atlantique. Notre promesse est simple :
+            offrir des beignets croustillants à l'extérieur, fondants à l'intérieur, avec un accueil chaleureux comme à la maison.
+          </p>
+          <p>
+            Chaque matin, notre équipe prépare les pâtes et fourrages avec des ingrédients sourcés localement pour garantir un goût authentique.
+          </p>
+          <a class="btn btn--outline" href="#contact">Nous contacter</a>
+        </div>
+        <div class="about__image">
+          <img src="assets/image a propos.png" alt="Équipe Maison Beignet face à l'océan">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact__inner">
+        <span class="section__eyebrow">Restons en contact</span>
+        <h2>Nous contacter</h2>
+        <p>Une envie de beignets pour votre événement ou de réserver notre triporteur&nbsp;? Envoyez-nous un message.</p>
+        <a class="btn btn--primary" href="mailto:maisonbeignet@bdbapp.fr">maisonbeignet@bdbapp.fr</a>
+        <div class="contact__links">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="assets/Logo Texte.png" alt="Maison Beignet logo">
+      <span>Le beignet comme à la maison</span>
+    </div>
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <a href="#accueil">Accueil</a>
+      <a href="#produits">Nos Beignets</a>
+      <a href="#ou-nous-trouver">Nous trouver</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer__copyright">© <span data-current-year></span> Maison Beignet. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Année actuelle
+    document.querySelectorAll('[data-current-year]').forEach(function (element) {
+      element.textContent = new Date().getFullYear();
+    });
+
+    // Menu burger
+    const burger = document.querySelector('.nav__burger');
+    const navLinks = document.querySelector('.nav__links');
+    const body = document.body;
+
+    burger.addEventListener('click', function() {
+      const isOpen = burger.getAttribute('aria-expanded') === 'true';
+      
+      burger.setAttribute('aria-expanded', !isOpen);
+      burger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    });
+
+    // Fermer le menu lors du clic sur un lien
+    document.querySelectorAll('.nav__links a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        burger.classList.remove('active');
+        navLinks.classList.remove('active');
+        body.classList.remove('menu-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>
