@@ -46,16 +46,20 @@
         <img src="assets/Image beignet Acceuil.png" alt="Beignet Maison Beignet">
       </div>
     </div>
-    <div class="hero__wave" role="presentation"></div>
+    <div class="hero__wave" role="presentation">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="wave-path" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="var(--bg-color)"/>
+      </svg>
+    </div>
   </header>
 
   <main>
-    <section id="produits" class="section products">
+    <section id="produits" class="section products scroll-reveal">
       <div class="products__title-block">
         <h2>Deux goûts,<br>deux classiques</h2>
       </div>
 
-      <div class="products__feature">
+      <div class="products__feature scroll-reveal">
         <div class="products__item products__item--pomme">
           <img src="assets/beignet pomme.png" alt="Beignet pomme Maison Beignet">
           <div class="products__item-info">
@@ -74,7 +78,7 @@
       </div>
     </section>
 
-    <section id="ou-nous-trouver" class="section locations">
+    <section id="ou-nous-trouver" class="section locations scroll-reveal">
       <div class="section__intro">
         <span class="section__eyebrow">Sur la côte</span>
         <h2>Où nous trouver</h2>
@@ -82,17 +86,17 @@
       </div>
 
       <div class="locations__grid">
-        <article class="location-card">
+        <article class="location-card scroll-reveal">
           <div class="location-card__image location-card__image--nauzan" role="presentation"></div>
           <h3>Nauzan</h3>
           <p>La promenade idéale pour savourer nos beignets tout en regardant le soleil se coucher.</p>
         </article>
-        <article class="location-card">
+        <article class="location-card scroll-reveal">
           <div class="location-card__image location-card__image--bois" role="presentation"></div>
           <h3>Bois-Plage</h3>
           <p>Notre triporteur vous attend à l'entrée principale, juste à côté de la piste cyclable.</p>
         </article>
-        <article class="location-card">
+        <article class="location-card scroll-reveal">
           <div class="location-card__image location-card__image--saint-palais" role="presentation"></div>
           <h3>Saint-Palais</h3>
           <p>Un détour par la conche et une poche de beignets tout frais avant de replonger dans l'océan.</p>
@@ -100,9 +104,9 @@
       </div>
     </section>
 
-    <section id="apropos" class="section about">
+    <section id="apropos" class="section about scroll-reveal">
       <div class="about__content">
-        <div class="about__text">
+        <div class="about__text scroll-reveal">
           <span class="section__eyebrow">Notre histoire</span>
           <h2>À propos</h2>
           <p>
@@ -114,13 +118,13 @@
           </p>
           <a class="btn btn--outline" href="#contact">Nous contacter</a>
         </div>
-        <div class="about__image">
+        <div class="about__image scroll-reveal">
           <img src="assets/image a propos.png" alt="Équipe Maison Beignet face à l'océan">
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact scroll-reveal">
       <div class="contact__inner">
         <span class="section__eyebrow">Restons en contact</span>
         <h2>Nous contacter</h2>
@@ -177,6 +181,25 @@
         body.classList.remove('menu-open');
         burger.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Animations au scroll
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.scroll-reveal').forEach(function(element) {
+      observer.observe(element);
     });
   </script>
 </body>
