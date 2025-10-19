@@ -5,9 +5,90 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maison Beignet | Le beignet comme à la maison</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Maison Beignet - Beignets artisanaux sur la côte Atlantique. Découvrez nos beignets pomme et chocolat à Nauzan, Bois-Plage et Saint-Palais. Le beignet comme à la maison.">
+  <meta name="keywords" content="beignet, artisan, côte atlantique, Nauzan, Bois-Plage, Saint-Palais, beignet pomme, beignet chocolat, triporteur">
+  <meta name="author" content="Maison Beignet">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maisonbeignets.fr/">
+  <meta property="og:title" content="Maison Beignet | Le beignet comme à la maison">
+  <meta property="og:description" content="Beignets artisanaux sur la côte Atlantique. Découvrez nos beignets pomme et chocolat à Nauzan, Bois-Plage et Saint-Palais.">
+  <meta property="og:image" content="https://maisonbeignets.fr/assets/Image beignet Acceuil.png">
+  <meta property="og:site_name" content="Maison Beignet">
+  <meta property="og:locale" content="fr_FR">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://maisonbeignets.fr/">
+  <meta property="twitter:title" content="Maison Beignet | Le beignet comme à la maison">
+  <meta property="twitter:description" content="Beignets artisanaux sur la côte Atlantique. Découvrez nos beignets pomme et chocolat à Nauzan, Bois-Plage et Saint-Palais.">
+  <meta property="twitter:image" content="https://maisonbeignets.fr/assets/Image beignet Acceuil.png">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2D35DC">
+  <meta name="msapplication-TileColor" content="#2D35DC">
+  <link rel="canonical" href="https://maisonbeignets.fr/">
   <link rel="icon" type="image/png" href="assets/Image beignet Acceuil.png">
   <link rel="apple-touch-icon" href="assets/Image beignet Acceuil.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Maison Beignet",
+    "description": "Beignets artisanaux sur la côte Atlantique. Le beignet comme à la maison.",
+    "url": "https://maisonbeignets.fr",
+    "telephone": "+33-XXX-XXX-XXX",
+    "email": "contact@maisonbeignets.fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Île de Ré",
+      "addressRegion": "Nouvelle-Aquitaine",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "46.2",
+      "longitude": "-1.2"
+    },
+    "openingHours": "Mo-Su 09:00-19:00",
+    "priceRange": "€€",
+    "servesCuisine": "Française",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Nos Beignets",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Beignet Pomme",
+            "description": "Traditionnel beignet pomme avec ses morceaux — 125g"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Beignet Chocolat",
+            "description": "Un mélange de saveurs entre noisette et cacao — 125g"
+          }
+        }
+      ]
+    },
+    "sameAs": [
+      "https://www.instagram.com/maisonbeignets",
+      "https://www.linkedin.com/company/maisonbeignets"
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="hero" id="accueil">
@@ -40,7 +121,7 @@
         <a class="btn btn--primary" href="#produits">Nos beignets</a>
       </div>
       <div class="hero__beignet">
-        <img src="assets/Image beignet Acceuil.png" alt="Beignet Maison Beignet">
+        <img src="assets/Image beignet Acceuil.png" alt="Beignet Maison Beignet" loading="lazy">
       </div>
     </div>
     <div class="hero__wave" role="presentation">
@@ -58,7 +139,7 @@
 
       <div class="products__feature scroll-reveal">
         <div class="products__item products__item--pomme">
-          <img src="assets/beignet pomme.png" alt="Beignet pomme Maison Beignet">
+          <img src="assets/beignet pomme.png" alt="Beignet pomme Maison Beignet" loading="lazy">
           <div class="products__item-info">
             <h3 class="products__flavor products__flavor--pomme">Pomme</h3>
             <p>Traditionnel beignet pomme avec ses morceaux — 125g</p>
@@ -66,7 +147,7 @@
         </div>
 
         <div class="products__item products__item--chocolat">
-          <img src="assets/beignet chocolat.png" alt="Beignet chocolat Maison Beignet">
+          <img src="assets/beignet chocolat.png" alt="Beignet chocolat Maison Beignet" loading="lazy">
           <div class="products__item-info">
             <h3 class="products__flavor products__flavor--chocolat">Chocolat</h3>
             <p>Un mélange de saveurs entre noisette et cacao — 125g</p>
@@ -116,7 +197,7 @@
           <a class="btn btn--outline" href="#contact">Nous contacter</a>
         </div>
         <div class="about__image scroll-reveal">
-          <img src="assets/image a propos.png" alt="Équipe Maison Beignet face à l'océan">
+          <img src="assets/image a propos.png" alt="Équipe Maison Beignet face à l'océan" loading="lazy">
         </div>
       </div>
     </section>
@@ -198,6 +279,19 @@
     document.querySelectorAll('.scroll-reveal').forEach(function(element) {
       observer.observe(element);
     });
+
+    // Service Worker Registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('SW registered: ', registration);
+          })
+          .catch(function(registrationError) {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
   </script>
 </body>
 </html>

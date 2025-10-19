@@ -1,0 +1,29 @@
+{
+  "name": "Maison Beignet",
+  "short_name": "Maison Beignet",
+  "description": "Beignets artisanaux sur la côte Atlantique. Le beignet comme à la maison.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D35DC",
+  "theme_color": "#2D35DC",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/Image beignet Acceuil.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/Image beignet Acceuil.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "business", "lifestyle"],
+  "lang": "fr",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
