@@ -1,10 +1,10 @@
-const CACHE_NAME = 'maison-beignet-v1';
+const CACHE_NAME = 'maison-beignet-v3';
 const urlsToCache = [
   '/',
   '/index.html',
   '/styles.css',
   '/assets/Image beignet Acceuil.png',
-  '/assets/Logo Texte.png',
+  '/assets/LogoTexte sansfond.png',
   '/assets/Logo Maison.png',
   '/assets/beignet pomme.png',
   '/assets/beignet chocolat.png',
@@ -13,7 +13,9 @@ const urlsToCache = [
   '/assets/Plage Nauzan.jpg',
   '/assets/Plage le Bois-Plage.jpeg',
   '/assets/Plage Saint Palais.jpg',
-  '/assets/Super Joyful.ttf'
+  '/assets/Super Joyful.ttf',
+  '/assets/Oliver-Regular.ttf',
+  '/assets/Shaabyla-Regular.ttf'
 ];
 
 // Installation du service worker

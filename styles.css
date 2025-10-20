@@ -6,6 +6,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Oliver';
+  src: url('assets/Oliver-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shaabyla';
+  src: url('assets/Shaabyla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg-color: #2D35DC;
   --accent-color: #FEFD40;
@@ -23,11 +39,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
 body {
   margin: 0;
-  font-family: 'Super Joyful', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Shaabyla', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 700;
   background: var(--bg-color);
   color: var(--text-light);
@@ -50,7 +67,7 @@ a {
 h1,
 h2,
 h3 {
-  font-family: 'Super Joyful', sans-serif;
+  font-family: 'Oliver', sans-serif;
   font-weight: 900;
   margin: 0;
   line-height: 1.08;
@@ -59,6 +76,7 @@ h3 {
 p {
   margin: 0;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .nav {
@@ -83,7 +101,7 @@ p {
 .nav__links a {
   color: var(--accent-color);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.02em;
   transition: opacity 0.2s ease;
 }
@@ -185,7 +203,7 @@ p {
 
 .hero__description {
   color: var(--text-light);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   max-width: 32ch;
   margin-bottom: 2rem;
 }
@@ -284,7 +302,7 @@ p {
 
 .section__intro p {
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
 }
 
 .section__eyebrow {
@@ -425,7 +443,7 @@ p {
 
 .about__text p {
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -457,6 +475,7 @@ p {
 .contact__inner p {
   color: var(--text-muted);
   margin-bottom: 2rem;
+  font-size: 1.15rem;
 }
 
 .contact__links {

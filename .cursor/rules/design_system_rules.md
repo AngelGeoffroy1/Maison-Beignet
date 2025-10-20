@@ -215,3 +215,108 @@ assets/
 3. Minimize CSS specificity
 4. Use CSS custom properties for theming
 5. Consider critical CSS for above-the-fold content
+
+## 📱 Figma Integration Guidelines
+
+### Design Token Mapping
+When importing from Figma, map design tokens as follows:
+
+**Colors**:
+- Figma color → CSS custom property
+- Use semantic naming (not color names)
+- Maintain brand consistency
+
+**Typography**:
+- Figma text styles → CSS font properties
+- Use `clamp()` for responsive sizing
+- Maintain font hierarchy
+
+**Spacing**:
+- Figma spacing → CSS padding/margin
+- Use consistent spacing scale
+- Consider mobile adaptations
+
+**Components**:
+- Figma components → CSS classes
+- Follow BEM naming convention
+- Include all states (hover, focus, active)
+
+### Asset Export Guidelines
+1. **Images**: Export as PNG/JPG, optimize for web
+2. **Icons**: Export as SVG when possible, PNG as fallback
+3. **Fonts**: Export as TTF/WOFF2
+4. **Naming**: Use descriptive, consistent naming
+
+### Responsive Considerations
+1. **Mobile-first**: Design for mobile, enhance for desktop
+2. **Breakpoints**: Align with CSS media queries
+3. **Touch targets**: Minimum 44px for interactive elements
+4. **Content priority**: Ensure important content is visible on mobile
+
+### Accessibility Integration
+1. **Color contrast**: Ensure WCAG AA compliance
+2. **Focus states**: Design visible focus indicators
+3. **Alt text**: Plan for image descriptions
+4. **Semantic HTML**: Use proper heading hierarchy
+
+## 🚀 Development Workflow
+
+### Component Development
+1. **Design**: Create in Figma with design tokens
+2. **Export**: Export assets and specifications
+3. **Code**: Implement with CSS classes
+4. **Test**: Verify responsive behavior
+5. **Document**: Update component library
+
+### Asset Pipeline
+1. **Export**: From Figma with proper naming
+2. **Optimize**: Compress images, convert formats
+3. **Organize**: Place in `/assets/` directory
+4. **Reference**: Update CSS/HTML with new paths
+5. **Test**: Verify loading and display
+
+### Quality Assurance
+1. **Cross-browser**: Test in major browsers
+2. **Responsive**: Test all breakpoints
+3. **Performance**: Check loading times
+4. **Accessibility**: Verify keyboard navigation
+5. **SEO**: Validate meta tags and structure
+
+## 📊 Performance Metrics
+
+### Key Performance Indicators
+- **Lighthouse Score**: Target 90+ for all categories
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **Time to Interactive**: < 3.5s
+
+### Optimization Strategies
+1. **Images**: Lazy loading, WebP format, proper sizing
+2. **Fonts**: `font-display: swap`, preload critical fonts
+3. **CSS**: Minimize unused styles, critical CSS
+4. **JavaScript**: Minimal, non-blocking scripts
+5. **Caching**: Service worker for offline functionality
+
+## 🔍 Code Quality Standards
+
+### CSS Standards
+- **Naming**: BEM methodology for components
+- **Organization**: Logical grouping of styles
+- **Comments**: Document complex styles
+- **Consistency**: Use design tokens throughout
+- **Performance**: Minimize specificity conflicts
+
+### HTML Standards
+- **Semantic**: Use proper HTML5 elements
+- **Accessibility**: Include ARIA labels where needed
+- **SEO**: Proper heading hierarchy and meta tags
+- **Performance**: Optimize for loading speed
+- **Validation**: Ensure valid HTML markup
+
+### JavaScript Standards
+- **Vanilla**: No external dependencies
+- **Performance**: Minimal, efficient code
+- **Accessibility**: Keyboard navigation support
+- **Progressive**: Graceful degradation
+- **Maintainable**: Clear, documented code
